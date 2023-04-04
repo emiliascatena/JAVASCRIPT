@@ -1,39 +1,44 @@
+const Aros = {
+nombre: "aros",
+precio: 1000,
+}
 
+const Anillos = {
+nombre: "anillos",
+precio: 2000,}
 
-/* calcular el monto de la cuota mensual del prestamos a solicitar*/
+const Pulseras ={
+nombre: "pulseras",
+precio: 3000,}
 
-do {
+const productos = [Aros, Anillos, Pulseras]
 
-    function calcularEdadUsuario (anioActual,anioNacimiento){
-        return anioActual-anioNacimiento;
-       }
-    
-       const anioActual= Number(prompt('¿En que año estamos?'));
-       const anioNacimiento= Number(prompt ('¿En que año naciste?'));
-       const EdadUsuario = calcularEdadUsuario (anioActual, anioNacimiento);
-       alert ('tu edad es '+ EdadUsuario)
-    
-       if (EdadUsuario > 18){
-    alert ('acceso permitido');}
-    else{
-    alert ('acceso no permitido para menores de edad')}
-    
-    
-    function calcularCuotaMensual (montoTotalPrestamo, _porcentajeInteresmensual,cantidadDeCuotas){
-    return montoTotalPrestamo / cantidadDeCuotas + _porcentajeInteresMensual ;
-    }
-    
-    const montoTotalPrestamo= Number(prompt('ingrese el valor del prestamo a solicitar'));
-    const cantidadDeCuotas= prompt('¿En cuantas cuotas quiere sacar el prestamo?');
-    const cuotaMensualSinInteres= montoTotalPrestamo/cantidadDeCuotas;
-    const _porcentajeInteresMensual= cuotaMensualSinInteres*0.07;
-    const cuotaMensual= calcularCuotaMensual (montoTotalPrestamo,_porcentajeInteresMensual,cantidadDeCuotas);
-    
-    alert('las cuotas mensuales a abonar serán de ' + cuotaMensual);    
+ const aplicarDescuento = (descuento) => (precio) =>precio*(1-descuento/100);
 
-rta= prompt ("Escriba 'ESC' para salir o cualquier cosa para continuar")
-} while (rta != 'ESC')
+ const carrito = []
 
+ let seguirComprando = true;
 
+ while(seguirComprando){
+const seleccion = prompt("¿Que producto desea comprar? \n Aros \n Anillos \n Pulseras");
 
+const productoSeleccionado = productos.find( (producto) => producto.nombre.toLowerCase() === seleccion.toLowerCase());
 
+if (productoSeleccionado){
+carrito.push(productoSeleccionado);
+const seguirSeleccionando = prompt ("Producto agregado exitosamente. ¿Desea seguir comprando? Si o No ");
+seguirComprando = seguirSeleccionando.toLowerCase() === "si";
+}
+else{
+alert("producto no encontrado")
+}
+}
+
+const precioTotal=
+carrito.reduce((total,producto) => total + producto.precio, 0);
+
+const precioFinal =
+carrito.length > 2?
+aplicarDescuento(10)(precioTotal):precioTotal;
+
+alert(`El precio total de su compra es de: $${precioFinal}`);
