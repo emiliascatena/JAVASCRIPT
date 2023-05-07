@@ -1,0 +1,39 @@
+[
+{
+        "id": 2,
+        "nombre": "Esclava de Plata",
+        "precio": 3000,
+        "imagen": "./assets/imagenes/pulsera2.jpg",
+        "stock": 5,
+        "disponible": true},
+{
+        "id": 3,
+        "nombre": "Anillo plata inflada",
+        "precio": 2300,
+        "imagen": "./assets/imagenes/anillo2.jpg",
+        "stock": 8,
+        "disponible": true},
+{
+        "id": 4,
+        "nombre": "Aro de Plata",
+        "precio": 2600,
+        "imagen": "./assets/imagenes/aros1.jpg",
+        "stock": 4,
+        "disponible": true},
+
+{
+        "id": 5,
+        "nombre": "Pulsera de Plata",
+        "precio": 2800,
+        "imagen": "./assets/imagenes/pulsera3.jpg",
+        "stock": 12,
+        "disponible": true},
+
+{
+        "id": 6,
+        "nombre": "Anillo de Plata",
+        "precio": 1800,
+        "imagen": "./assets/imagenes/anillo3.jpg",
+        "stock": 6,
+        "disponible": true}
+]
