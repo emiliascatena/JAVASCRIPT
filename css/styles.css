@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Happy+Monkey&family=PT+Sans+Narrow&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-size: 62,5%;}
+    
+    *{box-sizing: border-box;}
+    
+header nav a {
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold; }
+  
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+    h1{ color: rgb(87, 85, 122);
+        font-family: 'Amatic SC', sans-serif;
+        font-weight: bold;
+        font-size: 4rem;
+        margin-left:60px;
+        margin-top: 40px; 
+        text-align: center;}
+  
+.textoTarjeta{
+text-align: center;
+font-size: large;
+ font-weight: bold;
+color: rgb(25, 0, 83);}
+
+.Precio{
+color: rgb(117, 27, 235);}
+
+  main .card {
+    background-color: #b3dcf0f1;
+}
+
+  main .Cuadro {
+    background-color: rgba(11, 255, 255, 0.527) !important; }
+  
+
+  .piePagina {
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgba(119, 214, 238, 0.445);
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    color: rgb(114, 101, 101);
+}
+  
+.Facebook{
+    font-family: 'Courier New', Courier, monospace;
+      justify-content: center;
+      color: rgb(10, 65, 148);
+    }
+
+.instagram {
+    font-family: 'Courier New', Courier, monospace;
+      justify-content: center;
+      color: rgb(159, 16, 172);
+    }
+  
+    .footer{
+    font-size:larger;
+    font-weight: bolder;
+    color:black
+    }
+  
+  
